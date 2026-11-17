@@ -1,0 +1,33 @@
+{
+  "allowed_origins": [
+    "https://regulator.example.test"
+  ],
+  "steps": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://regulator.example.test/notices/N-1",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-1.bin",
+        "status": 200,
+        "bytes": 148,
+        "sha256": "d43f70d70f32a2a3fd313b9bd31b5bc506878c75da7ea419232875972ae27b3c"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://regulator.example.test/notices/N-2",
+        "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "response": {
+        "file": "source-2.bin",
+        "status": 200,
+        "bytes": 167,
+        "sha256": "72464e7eb78cbda2a62d95a2a226a9b4203c0089f5a429ef0d05cf2ef2556211"
+      }
+    }
+  ]
+}

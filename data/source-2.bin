@@ -1,0 +1,11 @@
+{
+  "doc_no": "N-2",
+  "revision": "v1",
+  "kind": "correction",
+  "approval": "P-8",
+  "batch": "B-01",
+  "references": [
+    "N-1"
+  ],
+  "effective": "2026-11-18"
+}
