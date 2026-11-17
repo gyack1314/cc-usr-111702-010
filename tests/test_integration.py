@@ -20,6 +20,7 @@ class Integration(unittest.TestCase):
         self.assertGreaterEqual(len(view['records']),2)
         self.assertFalse(view['publishable'])
         self.assertTrue(view['reasons'])
+        self.assertTrue(all(record['source_sha256'] for record in view['records']))
         self.assertEqual(db.execute('SELECT COUNT(*) FROM receipts').fetchone()[0],len(replay.steps))
         db.close()
 
